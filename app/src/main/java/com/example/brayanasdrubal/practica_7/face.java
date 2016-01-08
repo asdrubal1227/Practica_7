@@ -149,7 +149,6 @@ public class face extends AppCompatActivity {
         //String campoStr= campo.getText().toString();
         editor.putString("nombre",name);
         editor.putInt("entro",1);
-        editor.clear(); //Limpia todas las preferencias
         //editor.remove("nombre");
         editor.commit();
     }

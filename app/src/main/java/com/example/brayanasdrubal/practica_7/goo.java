@@ -135,7 +135,7 @@ public class goo extends AppCompatActivity implements GoogleApiClient.OnConnecti
         //String campoStr= campo.getText().toString();
         editor.putString("nombre",name);
         editor.putInt("entro",1);
-        editor.clear(); //Limpia todas las preferencias
+        //editor.clear(); //Limpia todas las preferencias
         //editor.remove("nombre");
         editor.commit();
     }
