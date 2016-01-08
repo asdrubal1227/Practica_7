@@ -14,7 +14,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/scrollView2"
-        android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true" >
 
         <LinearLayout
@@ -188,6 +187,19 @@
                 android:clickable="true"
                 android:textStyle="italic"
                 android:onClick="reg"/>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:textColor="@color/gray"
+            android:background="@drawable/pulsa"
+            android:layout_gravity="bottom|right"
+            android:text="Brayan Hoyos Gómez"
+            android:contextClickable="true"
+            android:clickable="true"
+            android:textStyle="italic"
+            android:onClick="reg"/>
         </LinearLayout>
     </ScrollView>
 
