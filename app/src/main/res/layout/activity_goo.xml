@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/id_sign_in_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible" >
+        </com.google.android.gms.common.SignInButton>
+        <TextView
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/detailsg"
+            />
+
+        <Button android:id="@+id/id_sign_out_button"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:text="@string/btnSignout"
+            android:textColor="@color/darkslategray"
+            android:background="@color/white"
+            android:textAllCaps="false"
+            android:layout_margin="4dp"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+    </LinearLayout>
+
+</RelativeLayout>

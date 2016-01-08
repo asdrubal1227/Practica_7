@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Practica_7</string>
+    <string name="text_subrayado"><u>Registrarse</u></string>
+    <string name="server_client_id">919385538544-vf13vmtehs5v3k19l23kism6hveeccdq.apps.googleusercontent.com</string>
+    <string name="ID_APP">949192355157626</string>
+    <string name="share">Continuar</string>
+    <string name="btnSignin">Sign In</string>
+    <string name="btnSignout">Cerar Sesión</string>
+    <string name="signed_out">^-^</string>
+    <string name="signed2_out">...</string>
+    <string name="loading">Loading</string>
+    <string name="veri">Las contraseñas no coinciden</string>
+    <string name="signed_in_fmt2">Correo: %s</string>
+</resources>

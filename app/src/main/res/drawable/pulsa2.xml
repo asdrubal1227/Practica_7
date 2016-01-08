@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estado pulsado -->
+
+    <item android:drawable="@color/orange" android:state_pressed="true"/>
+    <!-- Estado normal -->
+
+    <item android:drawable="@drawable/marcovert"/>
+
+</selector>

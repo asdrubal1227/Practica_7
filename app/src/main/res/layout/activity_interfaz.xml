@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.brayanasdrubal.practica_7.Interfaz">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageView1"
+                    android:src="@drawable/titulo"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:baselineAlignBottom="false"
+                    android:focusableInTouchMode="false"
+                    android:cropToPadding="false" />
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/icono"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true" />
+            </LinearLayout>
+<LinearLayout
+    android:layout_marginTop="40dp"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/usu"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:hint="Usuario"
+                android:id="@+id/usuario"
+                android:inputType="textAutoComplete|textAutoCorrect" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/key"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:hint="Contraseña"
+                android:id="@+id/contraseña" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/marcovert"
+        android:clickable="true"
+        android:contextClickable="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/pulsa"
+            android:gravity="center"
+            android:text="Iniciar sesión"
+            android:id="@+id/button1"
+            android:onClick="inse"
+            android:contextClickable="true"
+            android:clickable="true" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/marcovert"
+            android:clickable="true"
+            android:contextClickable="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/pulsa"
+                android:src="@drawable/facebook2"
+                android:text="New Button"
+                android:id="@+id/button2"
+                android:contextClickable="true"
+                android:clickable="true"
+                android:onClick="face"/>
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/marcovert"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contextClickable="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/google"
+                android:background="@drawable/pulsa"
+                android:text="New Button"
+                android:id="@+id/button3"
+                android:onClick="goo" />
+                </LinearLayout>
+        </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:textColor="@color/blue"
+                android:background="@drawable/pulsa"
+                android:layout_gravity="center"
+                android:text="@string/text_subrayado"
+                android:id="@+id/button4"
+                android:contextClickable="true"
+                android:clickable="true"
+                android:textStyle="italic"
+                android:onClick="reg"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
