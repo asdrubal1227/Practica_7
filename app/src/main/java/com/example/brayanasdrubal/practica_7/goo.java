@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +31,7 @@ public class goo extends AppCompatActivity implements GoogleApiClient.OnConnecti
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_goo);
         details=(TextView) findViewById(R.id.detailsg);
 
@@ -133,8 +135,8 @@ public class goo extends AppCompatActivity implements GoogleApiClient.OnConnecti
         SharedPreferences.Editor editor=prefs.edit();
         //EditText campo= (EditText) findViewById(R.id.editText);
         //String campoStr= campo.getText().toString();
-        editor.putString("nombre",name);
-        editor.putInt("entro",1);
+        editor.putString("nombre", name);
+        editor.putInt("entro", 1);
         //editor.clear(); //Limpia todas las preferencias
         //editor.remove("nombre");
         editor.commit();

@@ -47,8 +47,6 @@ public class Interfaz extends AppCompatActivity {
     }
     public void inse (View v){
         refeshPrefs();
-        Toast.makeText(Interfaz.this, dato, Toast.LENGTH_SHORT).show();
-        Toast.makeText(Interfaz.this, dato2, Toast.LENGTH_SHORT).show();
         EditText usuc=(EditText) findViewById(R.id.usuario);
         usu= usuc.getText().toString();
         EditText passc=(EditText) findViewById(R.id.contraseña);
